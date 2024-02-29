@@ -828,14 +828,24 @@
                 padding: 2rem
             }
         }
+
+        .logo {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .logo img {
+            width: 100vw;
+            height: 100vh;
+        }
     </style>
 </head>
 
 <body class="antialiased">
-    <header>
-        <div>
-            <div class="logo"><img src="logo.png" alt=""></div>
-            <div class="hambuguer"></div>
+    <!--    <header>
+        <div>-->
+    <div class="logo"><img src="logo.png" alt=""></div>
+    <!--            <div class="hambuguer"></div>
         </div>
         <div>
             <div class="search-bar"></div>
@@ -855,7 +865,7 @@
     <footer>
         <div class="copyright"></div>
         <div class="made-in-date"></div>
-    </footer>
+    </footer>-->
 </body>
 
 </html>
