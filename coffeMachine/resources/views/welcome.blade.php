@@ -55,7 +55,7 @@
         </div>
         <div class="search-bar-area">
             <div class="search-bar">
-            <i class="fa-solid fa-magnifying-glass"></i><input type="text">
+            <input id="search-input" class="search-input" type="text"><i id="magnifyingGlass" class="fa-solid fa-magnifying-glass"></i>
             </div>
             <div class="welcome-message"></div>
         </div>
@@ -76,5 +76,19 @@
         <div class="made-in-date"></div>
     </footer>
 </body>
+<script>
+    const magnifyingGlass = document.querySelector("#magnifyingGlass");
+    let clicked = false;
+    function showSearchBar(event){
+        if(!clicked){
+            document.querySelector("#search-input").style.display="inline";
+            clicked = true;
+        }else {
+            document.querySelector("#search-input").style.display="none";
+            clicked = false;
+        }
+    }
+    magnifyingGlass.addEventListener("click", showSearchBar);
 
+</script>
 </html>
