@@ -97,3 +97,62 @@ footer {
     height: 10vh;
     background-color: antiquewhite;
 }
+
+/*
+Galaxy Note
+*/
+
+@media screen and (min-device-width:200px) and (max-device-width:420px) {
+    header {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "search-bar"
+            "title-area";
+        height: 10vh;
+        position: fixed;
+        top: 0px;
+    }
+
+    .search-bar-area {
+        background-color: rgba(39, 55, 70, 0.9);
+        display: flex;
+        width: 100vw;
+        margin: 0px;
+        grid-area: search-bar;
+    }
+
+    .search-bar-area i {
+        color: white;
+    }
+
+    .title-area {
+        background-color: rgba(39, 55, 70, 0.9);
+        display: flex;
+        align-items: center;
+        align-content: center;
+        width: 100vw;
+        height: 50px;
+        margin: 0px;
+        color: white;
+        box-shadow: -3px 10px 15px -8px rgba(0, 0, 0, 0.75);
+
+    }
+
+    .logo-area {
+        display: none;
+    }
+
+    .coffe-image-area {
+        display: none;
+    }
+
+    .left-menu {
+        display: none;
+    }
+
+    .main-section {
+        height: 200vh;
+    }
+}
