@@ -82,7 +82,20 @@ header>div {
     grid-template-areas: "left-menu main-section-content";
     background-color: rgb(219, 227, 232);
     height: 60vh;
-    margin: 1em;
+    width: 100vw;
+    margin-top: 10vh;
+    padding-top: 60px;
+}
+
+.coffe-section {
+    display: block;
+    text-align: center;
+    width: 100vw;
+    background-color: rgb(219, 227, 232);
+}
+
+.reload-rain {
+    display: none;
 }
 
 .left-menu {
@@ -169,7 +182,6 @@ Galaxy Note
     }
 
     .search-bar input {
-        width: 100%;
         font-size: 20px;
         height: 40%;
         margin-left: 20px;
@@ -180,6 +192,10 @@ Galaxy Note
         border: 3px solid #ccc;
         transition: 0.5s;
         outline: none;
+        width: 100%;
+        animation-name: searchBar;
+        animation-duration: 0.3s;
+
     }
 
     .search-bar input:focus {
@@ -188,6 +204,25 @@ Galaxy Note
 
     .search-input {
         display: none;
+    }
+
+    footer {
+        background-color: rgba(39, 55, 70, 0.9);
+        display: flex;
+        width: 100vw;
+        margin: 0px;
+        grid-area: search-bar;
+
+    }
+
+    @keyframes searchBar {
+        from {
+            width: 0px;
+        }
+
+        to {
+            width: 100%;
+        }
     }
 
 }

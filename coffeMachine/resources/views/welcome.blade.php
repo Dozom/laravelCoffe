@@ -68,7 +68,7 @@
             <div class="facebook-icon"></div>
             <div class="instagram-icon"></div>
         </div>
-        <div class="coffe-section"></div>
+        <div class="coffe-section"><h1>Bienvenido a ReservaCafe.com</h1></div>
         <div class="reload-rain"></div>
     </section>
     <footer>
@@ -82,6 +82,7 @@
     function showSearchBar(event){
         if(!clicked){
             document.querySelector("#search-input").style.display="inline";
+
             clicked = true;
         }else {
             document.querySelector("#search-input").style.display="none";
