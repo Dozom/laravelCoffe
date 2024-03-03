@@ -24,11 +24,6 @@
             border-color: #e5e7eb
         }
 
-        ::after,
-        ::before {
-            --tw-content: ''
-        }
-
         html {
             line-height: 1.5;
             -webkit-text-size-adjust: 100%;
@@ -42,12 +37,12 @@
             margin: 0;
             line-height: inherit
         }
-
     </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        crossorigin="anonymous">
 </head>
 
-<body class="antialiased">
+<body>
     <header>
         <div class="logo-area">
             <div class="logo"><img src="logo.png" alt=""></div>
@@ -55,7 +50,8 @@
         </div>
         <div class="search-bar-area">
             <div class="search-bar">
-            <input id="search-input" class="search-input" type="text"><i id="magnifyingGlass" class="fa-solid fa-magnifying-glass"></i>
+                <input id="search-input" class="search-input" type="text"><i id="magnifyingGlass"
+                    class="fa-solid fa-magnifying-glass"></i>
             </div>
             <div class="welcome-message"></div>
         </div>
@@ -68,7 +64,54 @@
             <div class="facebook-icon"></div>
             <div class="instagram-icon"></div>
         </div>
-        <div class="coffe-section"><h1>Bienvenido a ReservaCafe.com</h1></div>
+        <article>
+            <h2>1. Espresso</h2>
+            <p>El espresso es un café fuerte y concentrado que se prepara forzando agua caliente a través de granos de
+                café finamente molidos. Es la base de muchas otras bebidas de café.</p>
+        </article>
+
+        <article>
+            <h2>2. Cappuccino</h2>
+            <p>El cappuccino es una bebida de café italiana que consiste en partes iguales de espresso, leche vaporizada
+                y espuma de leche. Es conocido por su textura cremosa y su capa de espuma.</p>
+        </article>
+
+        <article>
+            <h2>3. Latte</h2>
+            <p>El latte es una bebida de café elaborada con espresso y una cantidad generosa de leche vaporizada. Suele
+                tener una capa de espuma en la parte superior y puede ser aromatizado con jarabes.</p>
+        </article>
+
+        <article>
+            <h2>4. Americano</h2>
+            <p>El americano es una bebida de café que se hace diluyendo el espresso con agua caliente. Tiene un sabor
+                más suave que el espresso pero conserva su aroma y sabor distintivos.</p>
+        </article>
+
+        <article>
+            <h2>5. Macchiato</h2>
+            <p>El macchiato es una bebida de café que consiste en espresso con una pequeña cantidad de leche vaporizada
+                o espuma de leche. Su nombre significa "manchado" en italiano, refiriéndose a la mancha de leche en el
+                espresso.</p>
+        </article>
+
+        <article>
+            <h2>6. Mocha</h2>
+            <p>El mocha es una bebida de café que combina espresso, leche vaporizada, chocolate y crema batida. Es una
+                opción popular para los amantes del chocolate y el café.</p>
+        </article>
+
+        <article>
+            <h2>7. Frappé</h2>
+            <p>El frappé es una bebida de café fría y espumosa hecha con espresso, leche, hielo y jarabes de sabor. Se
+                mezcla hasta obtener una consistencia suave y se sirve con crema batida opcional.</p>
+        </article>
+
+        <article>
+            <h2>8. Cold Brew</h2>
+            <p>El cold brew es una bebida de café hecha con granos de café molidos en frío durante un período prolongado
+                de tiempo. Se sirve frío y tiene un sabor suave y menos ácido que el café caliente.</p>
+        </article>
         <div class="reload-rain"></div>
     </section>
     <footer>
@@ -79,17 +122,18 @@
 <script>
     const magnifyingGlass = document.querySelector("#magnifyingGlass");
     let clicked = false;
-    function showSearchBar(event){
-        if(!clicked){
-            document.querySelector("#search-input").style.display="inline";
+    function showSearchBar(event) {
+        if (!clicked) {
+            document.querySelector("#search-input").style.display = "inline";
 
             clicked = true;
-        }else {
-            document.querySelector("#search-input").style.display="none";
+        } else {
+            document.querySelector("#search-input").style.display = "none";
             clicked = false;
         }
     }
     magnifyingGlass.addEventListener("click", showSearchBar);
 
 </script>
+
 </html>
