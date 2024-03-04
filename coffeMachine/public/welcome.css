@@ -43,7 +43,7 @@ Galaxy Note
 
     article {
         width: 100vw;
-        background-color: white;
+        background-color: #007BB6;
         text-align: justify;
         text-justify: inter-word;
         padding-left: 1em;
@@ -51,10 +51,11 @@ Galaxy Note
         box-sizing: border-box;
         border: 0.5em solid #55ACEE;
         margin-bottom: 10px;
+        color: white;
     }
 
     article>h2 {
-        color: blueviolet;
+        color: #CCCCCC;
         text-align: center;
     }
 
