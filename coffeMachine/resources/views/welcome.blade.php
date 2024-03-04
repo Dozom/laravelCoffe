@@ -144,9 +144,10 @@
     magnifyingGlass.addEventListener("click", showSearchBar);
 
     document.addEventListener('keyup', e => {
-        if (e.target.matches('#search-input')) {
+        if (e.target.id == 'search-input') {
+            const searchTerm = e.target.value.toLowerCase();
             document.querySelectorAll(".article").forEach(article => {
-                article.textContent.toLowerCase().includes(e.target.value.toLowerCase())
+                article.textContent.toLowerCase().includes(searchTerm)
                     ? article.classList.remove("filter")
                     : article.classList.add("filter")
             })
