@@ -62,6 +62,7 @@ Galaxy Note
     }
 
     .main-section {
+        margin-top: 10vh;
         display: flex;
         flex-direction: column;
     }
