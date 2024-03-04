@@ -62,6 +62,7 @@ Galaxy Note
         background-color: rgba(39, 55, 70, 0.9);
         display: flex;
         width: 100vw;
+        height: 20vh;
         margin: 0px;
         grid-area: search-bar;
     }
