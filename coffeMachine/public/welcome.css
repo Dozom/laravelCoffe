@@ -128,11 +128,6 @@ Galaxy Note
         padding-bottom: 200px;
     }
 
-    .main-section {
-        display: flex;
-        flex-direction: column;
-    }
-
     header {
         display: grid;
         grid-template-columns: 100%;
@@ -144,6 +139,11 @@ Galaxy Note
         position: fixed;
         top: 0px;
         z-index: 1;
+    }
+
+    .main-section {
+        display: flex;
+        flex-direction: column;
     }
 
     article {
