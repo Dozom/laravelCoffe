@@ -142,17 +142,16 @@
         }
     }
     magnifyingGlass.addEventListener("click", showSearchBar);
-    function finder(event) {
-        document.addEventListener('keyup', e => {
-            if (e.target.matches('#search-input')) {
-                document.querySelectorAll(".article").forEach(article => {
-                    article.textContent.toLowerCase().includes(e.target.value.toLowerCase())
-                        ? article.classList.remove("filter")
-                        : article.classList.add("filter")
-                })
-            }
-        })
-    }
+
+    document.addEventListener('keyup', e => {
+        if (e.target.matches('#search-input')) {
+            document.querySelectorAll(".article").forEach(article => {
+                article.textContent.toLowerCase().includes(e.target.value.toLowerCase())
+                    ? article.classList.remove("filter")
+                    : article.classList.add("filter")
+            })
+        }
+    })
 
 </script>
 
