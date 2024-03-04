@@ -64,35 +64,35 @@
             <div class="facebook-icon"></div>
             <div class="instagram-icon"></div>
         </div>
-        <article>
+        <article class="article">
             <h2>1. Espresso</h2>
             <p>El espresso es un café fuerte y concentrado que se prepara forzando agua caliente a través de granos
                 de
                 café finamente molidos. Es la base de muchas otras bebidas de café.</p>
         </article>
 
-        <article>
+        <article class="article">
             <h2>2. Cappuccino</h2>
             <p>El cappuccino es una bebida de café italiana que consiste en partes iguales de espresso, leche
                 vaporizada
                 y espuma de leche. Es conocido por su textura cremosa y su capa de espuma.</p>
         </article>
 
-        <article>
+        <article class="article">
             <h2>3. Latte</h2>
             <p>El latte es una bebida de café elaborada con espresso y una cantidad generosa de leche vaporizada.
                 Suele
                 tener una capa de espuma en la parte superior y puede ser aromatizado con jarabes.</p>
         </article>
 
-        <article>
+        <article class="article">
             <h2>4. Americano</h2>
             <p>El americano es una bebida de café que se hace diluyendo el espresso con agua caliente. Tiene un
                 sabor
                 más suave que el espresso pero conserva su aroma y sabor distintivos.</p>
         </article>
 
-        <article>
+        <article class="article">
             <h2>5. Macchiato</h2>
             <p>El macchiato es una bebida de café que consiste en espresso con una pequeña cantidad de leche
                 vaporizada
@@ -101,21 +101,21 @@
                 espresso.</p>
         </article>
 
-        <article>
+        <article class="article">
             <h2>6. Mocha</h2>
             <p>El mocha es una bebida de café que combina espresso, leche vaporizada, chocolate y crema batida. Es
                 una
                 opción popular para los amantes del chocolate y el café.</p>
         </article>
 
-        <article>
+        <article class="article">
             <h2>7. Frappé</h2>
             <p>El frappé es una bebida de café fría y espumosa hecha con espresso, leche, hielo y jarabes de sabor.
                 Se
                 mezcla hasta obtener una consistencia suave y se sirve con crema batida opcional.</p>
         </article>
 
-        <article>
+        <article class="article">
             <h2>8. Cold Brew</h2>
             <p>El cold brew es una bebida de café hecha con granos de café molidos en frío durante un período
                 prolongado
@@ -142,6 +142,17 @@
         }
     }
     magnifyingGlass.addEventListener("click", showSearchBar);
+    function finder(event) {
+        document.addEventListener('keyup', e => {
+            if (e.target.matches('#search-input')) {
+                document.querySelectorAll(".article").forEach(article => {
+                    article.textContent.toLowerCase().includes(e.target.value.toLowerCase())
+                        ? article.classList.remove("filter")
+                        : article.classList.add("filter")
+                })
+            }
+        })
+    }
 
 </script>
 

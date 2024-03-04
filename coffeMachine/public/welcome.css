@@ -10,6 +10,10 @@ Galaxy Note
         position: absolute;
     }
 
+    .filter {
+        display: none;
+    }
+
     html {
         box-sizing: border-box;
     }
