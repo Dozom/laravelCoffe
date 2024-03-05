@@ -44,11 +44,11 @@
             <div class="instagram-icon"></div>
         </div>
         <section class="first-page">
-            <h1>Bienvenido a ReservaCafe</h1>
-            <p>Eres amante del café y no sabes donde comprarlo? ReservaCafe es un proyecto personal que pretende ser un
+            <h1>Potser avui ha sigut un dia difícil, però ànims! ;)</h1>
+            <!-- <p>Eres amante del café y no sabes donde comprarlo? ReservaCafe es un proyecto personal que pretende ser un
                 punto de
                 encuentro para los amantes del café.
-            </p>
+            </p> -->
         </section>
         <article class="article">
             <h1>Espresso</h1>
