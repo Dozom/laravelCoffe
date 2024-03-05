@@ -64,62 +64,87 @@
             <div class="facebook-icon"></div>
             <div class="instagram-icon"></div>
         </div>
+        <section class="first-page">
+            <h1>Bienvenido a ReservaCafe</h1>
+            <p>Eres amante del café y no sabes donde comprarlo? ReservaCafe es un proyecto personal que pretende ser un
+                punto de
+                encuentro para los amantes del café.
+            </p>
+        </section>
         <article class="article">
-            <h2>1. Espresso</h2>
+            <h1>1. Espresso</h1>
             <p>El espresso es un café fuerte y concentrado que se prepara forzando agua caliente a través de granos
                 de
-                café finamente molidos. Es la base de muchas otras bebidas de café.</p>
+                café finamente molidos. Es la base de muchas otras bebidas de café.
+                <img class="image-box" src="images/espresso.jpg" alt="Espresso">
+
+            </p>
         </article>
 
         <article class="article">
-            <h2>2. Cappuccino</h2>
+            <h1>2. Cappuccino</h1>
             <p>El cappuccino es una bebida de café italiana que consiste en partes iguales de espresso, leche
                 vaporizada
-                y espuma de leche. Es conocido por su textura cremosa y su capa de espuma.</p>
+                y espuma de leche. Es conocido por su textura cremosa y su capa de espuma.
+                <img class="image-box" src="images/capuchino.jpg" alt="Capuchino">
+            </p>
         </article>
 
         <article class="article">
-            <h2>3. Latte</h2>
+            <h1>3. Latte</h1>
             <p>El latte es una bebida de café elaborada con espresso y una cantidad generosa de leche vaporizada.
                 Suele
-                tener una capa de espuma en la parte superior y puede ser aromatizado con jarabes.</p>
+                tener una capa de espuma en la parte superior y puede ser aromatizado con jarabes.
+                <img class="image-box" src="images/latte.jpg" alt="Latte">
+            </p>
         </article>
 
         <article class="article">
-            <h2>4. Americano</h2>
+            <h1>4. Americano</h1>
             <p>El americano es una bebida de café que se hace diluyendo el espresso con agua caliente. Tiene un
                 sabor
-                más suave que el espresso pero conserva su aroma y sabor distintivos.</p>
+                más suave que el espresso pero conserva su aroma y sabor distintivos.
+                <img class="image-box" src="images/americano.jpg" alt="Americano">
+            </p>
+
         </article>
 
         <article class="article">
-            <h2>5. Macchiato</h2>
+            <h1>5. Macchiato</h1>
             <p>El macchiato es una bebida de café que consiste en espresso con una pequeña cantidad de leche
                 vaporizada
                 o espuma de leche. Su nombre significa "manchado" en italiano, refiriéndose a la mancha de leche en
                 el
-                espresso.</p>
+                espresso.
+                <img class="image-box" src="images/macchiato.jpg" alt="Macchiato">
+            </p>
         </article>
 
         <article class="article">
-            <h2>6. Mocha</h2>
+            <h1>6. Mocha</h1>
             <p>El mocha es una bebida de café que combina espresso, leche vaporizada, chocolate y crema batida. Es
                 una
-                opción popular para los amantes del chocolate y el café.</p>
+                opción popular para los amantes del chocolate y el café.
+                <img class="image-box" src="images/mocha.jpg" alt="Mocha">
+            </p>
         </article>
 
         <article class="article">
-            <h2>7. Frappé</h2>
+            <h1>7. Frappé</h1>
             <p>El frappé es una bebida de café fría y espumosa hecha con espresso, leche, hielo y jarabes de sabor.
                 Se
-                mezcla hasta obtener una consistencia suave y se sirve con crema batida opcional.</p>
+                mezcla hasta obtener una consistencia suave y se sirve con crema batida opcional.
+                <img class="image-box" src="images/frappe.jpg" alt="Frappe">
+            </p>
         </article>
 
         <article class="article">
-            <h2>8. Cold Brew</h2>
+            <h1>8. Cold Brew</h1>
             <p>El cold brew es una bebida de café hecha con granos de café molidos en frío durante un período
                 prolongado
-                de tiempo. Se sirve frío y tiene un sabor suave y menos ácido que el café caliente.</p>
+                de tiempo. Se sirve frío y tiene un sabor suave y menos ácido que el café caliente.
+                <img class="image-box" src="images/coldbrew.jpg" alt="Cold Brew">
+            </p>
         </article>
         <div class="reload-rain"></div>
     </section>
@@ -133,11 +158,14 @@
     let clicked = false;
     function showSearchBar(event) {
         if (!clicked) {
+            document.querySelector(".first-page").style.display = "none";
             document.querySelector("#search-input").style.display = "inline";
-
+            document.querySelector("#search-input").focus();
             clicked = true;
         } else {
+            document.querySelector(".first-page").style.display = "inline";
             document.querySelector("#search-input").style.display = "none";
+            document.querySelector("#search-input")
             clicked = false;
         }
     }

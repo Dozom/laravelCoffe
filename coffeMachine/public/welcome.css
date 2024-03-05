@@ -4,10 +4,16 @@ Galaxy Note
 
 @media screen and (min-device-width:200px) and (max-device-width:420px) {
 
+    * {
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
     html,
     body {
         height: 100%;
         position: absolute;
+        background-color: #fffdfa;
     }
 
     .filter {
@@ -16,6 +22,26 @@ Galaxy Note
 
     html {
         box-sizing: border-box;
+    }
+
+    .first-page {
+        box-sizing: border-box;
+        width: 100vw;
+        height: 100vh;
+        padding: 12px;
+        text-align: center;
+    }
+
+    .first-page h1 {
+        font-size: 2.5rem;
+    }
+
+    .first-page p {
+        border-left: 1px solid c;
+        padding-left: 20px;
+        padding-right: 20px;
+        color: #808080;
+        text-align: justify;
     }
 
     body {
@@ -47,24 +73,23 @@ Galaxy Note
 
     article {
         width: 100vw;
-        background-color: #007BB6;
         text-align: justify;
         text-justify: inter-word;
         padding-left: 1em;
         padding-right: 1em;
         box-sizing: border-box;
-        border: 0.5em solid #55ACEE;
         margin-bottom: 10px;
-        color: white;
+        color: #808080;
     }
 
-    article>h2 {
-        color: #CCCCCC;
+    article>h1 {
+        font-size: 1.5rem;
+        color: black;
         text-align: center;
     }
 
     .search-bar-area {
-        background-color: rgba(39, 55, 70, 0.9);
+        background-color: #d4ae5c;
         display: flex;
         align-items: center;
         justify-content: right;
@@ -134,7 +159,7 @@ Galaxy Note
     }
 
     .search-bar input:focus {
-        border: 3px solid #55ACEE;
+        border: 3px solid #987538;
     }
 
     .search-input {
@@ -144,12 +169,21 @@ Galaxy Note
     footer {
         display: block;
         height: 40px;
-        background-color: rgba(39, 55, 70, 0.9);
+        background-color: #d4ae5c;
         width: 100vw;
         bottom: 0;
         left: 0;
         color: white;
         right: 0;
+    }
+
+    .image-box {
+        margin-top: 1rem;
+        width: 90vw;
+        height: 200px;
+        object-fit: cover;
+        object-position: 100% 100%;
+
     }
 
     @keyframes searchBar {
