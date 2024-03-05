@@ -11,32 +11,11 @@
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
     <link href="{{ asset('welcome.css') }}" rel="stylesheet">
+    <link href="{{ asset('coffe.css') }}" rel="stylesheet">
 
     <!-- Styles -->
     <style>
         /* ! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com */
-        *,
-        ::after,
-        ::before {
-            box-sizing: border-box;
-            border-width: 0;
-            border-style: solid;
-            border-color: #e5e7eb
-        }
-
-        html {
-            line-height: 1.5;
-            -webkit-text-size-adjust: 100%;
-            -moz-tab-size: 4;
-            tab-size: 4;
-            font-family: Figtree, sans-serif;
-            font-feature-settings: normal
-        }
-
-        body {
-            margin: 0;
-            line-height: inherit
-        }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         crossorigin="anonymous">
@@ -72,7 +51,7 @@
             </p>
         </section>
         <article class="article">
-            <h1>1. Espresso</h1>
+            <h1>Espresso</h1>
             <p>El espresso es un café fuerte y concentrado que se prepara forzando agua caliente a través de granos
                 de
                 café finamente molidos. Es la base de muchas otras bebidas de café.
@@ -82,7 +61,7 @@
         </article>
 
         <article class="article">
-            <h1>2. Cappuccino</h1>
+            <h1>Cappuccino</h1>
             <p>El cappuccino es una bebida de café italiana que consiste en partes iguales de espresso, leche
                 vaporizada
                 y espuma de leche. Es conocido por su textura cremosa y su capa de espuma.
@@ -91,7 +70,7 @@
         </article>
 
         <article class="article">
-            <h1>3. Latte</h1>
+            <h1>Latte</h1>
             <p>El latte es una bebida de café elaborada con espresso y una cantidad generosa de leche vaporizada.
                 Suele
                 tener una capa de espuma en la parte superior y puede ser aromatizado con jarabes.
@@ -100,7 +79,7 @@
         </article>
 
         <article class="article">
-            <h1>4. Americano</h1>
+            <h1>Americano</h1>
             <p>El americano es una bebida de café que se hace diluyendo el espresso con agua caliente. Tiene un
                 sabor
                 más suave que el espresso pero conserva su aroma y sabor distintivos.
@@ -110,7 +89,7 @@
         </article>
 
         <article class="article">
-            <h1>5. Macchiato</h1>
+            <h1>Macchiato</h1>
             <p>El macchiato es una bebida de café que consiste en espresso con una pequeña cantidad de leche
                 vaporizada
                 o espuma de leche. Su nombre significa "manchado" en italiano, refiriéndose a la mancha de leche en
@@ -121,7 +100,7 @@
         </article>
 
         <article class="article">
-            <h1>6. Mocha</h1>
+            <h1>Mocha</h1>
             <p>El mocha es una bebida de café que combina espresso, leche vaporizada, chocolate y crema batida. Es
                 una
                 opción popular para los amantes del chocolate y el café.
@@ -130,7 +109,7 @@
         </article>
 
         <article class="article">
-            <h1>7. Frappé</h1>
+            <h1>Frappé</h1>
             <p>El frappé es una bebida de café fría y espumosa hecha con espresso, leche, hielo y jarabes de sabor.
                 Se
                 mezcla hasta obtener una consistencia suave y se sirve con crema batida opcional.
@@ -139,7 +118,7 @@
         </article>
 
         <article class="article">
-            <h1>8. Cold Brew</h1>
+            <h1>Cold Brew</h1>
             <p>El cold brew es una bebida de café hecha con granos de café molidos en frío durante un período
                 prolongado
                 de tiempo. Se sirve frío y tiene un sabor suave y menos ácido que el café caliente.
@@ -165,7 +144,6 @@
         } else {
             document.querySelector(".first-page").style.display = "inline";
             document.querySelector("#search-input").style.display = "none";
-            document.querySelector("#search-input")
             clicked = false;
         }
     }
