@@ -24,11 +24,13 @@ class UserTest extends TestCase
     {
         Artisan::call('migrate');
         // El formulario carga correctamente
-        $response = $this->post(route('validate-register'), [
-            'name' => 'Dani Nager Carpio',
-            'email' => 'dnager@gmail.com',
-            'password' => 'admin1234'
-        ]);
+        $response = $this->withHeaders([
+            'X-CSRF-TOKEN' => csrf_token(),
+        ])->post(route('validate-register'), [
+                    'name' => 'Dani Nager Carpio',
+                    'email' => 'dnager@gmail.com',
+                    'password' => 'admin1234'
+                ]);
         $response->assertStatus(302)->assertSee('Redirecting to');
     }
 
@@ -37,11 +39,13 @@ class UserTest extends TestCase
         $this->test_register_with_valid_user();
         Artisan::call('migrate');
         // El formulario carga correctamente
-        $response = $this->post(route('validate-register'), [
-            'name' => 'Dani Nager Carpio',
-            'email' => 'dnager@gmail.com',
-            'password' => 'admin1234'
-        ]);
+        $response = $this->withHeaders([
+            'X-CSRF-TOKEN' => csrf_token(),
+        ])->post(route('validate-register'), [
+                    'name' => 'Dani Nager Carpio',
+                    'email' => 'dnager@gmail.com',
+                    'password' => 'admin1234'
+                ]);
         $responseData = $response->json();
         $this->assertEquals($responseData['status'], 1);
         $this->assertEquals($responseData['error'], 'Error saving registers');
