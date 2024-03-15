@@ -91,6 +91,12 @@ Galaxy Note
         text-align: center;
     }
 
+    article>h2 {
+        font-size: 1.5rem;
+        color: black;
+        text-align: center;
+    }
+
     .search-bar-area {
         background-color: #d4ae5c;
         display: flex;
