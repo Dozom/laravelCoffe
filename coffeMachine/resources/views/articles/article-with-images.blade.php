@@ -3,7 +3,7 @@
     <section class="main_review">
         <h3>{{ $post->title }}</h3>
         <p>{{ $post->description }}</p>
-        <img class="image-box" src="{{ $post->image_url }}" alt="{{ $post->image_alt }}">
+        <img class="image-box" loading="lazy" src="{{ $post->image_url }}" alt="{{ $post->image_alt }}">
     </section>
     <footer>
         <p>
