@@ -16,10 +16,30 @@
         </style>
     </head>
     <body class="font-sans antialiased dark:bg-black dark:text-white/50">
+    <header>
+        <nav class="menu">
+            <ul>
+                <li>logo</li>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">CONTACT</a></li>
+                <li>LIGHT ON</li>
+            </ul>
+        </nav>
+    </header>
         <div class="qr">
             <canvas id="canvas"></canvas>
-            <input type="text" id="input_url">
+            <input type="text" id="input_url" placeholder="Introduce the value of QR">
             <button id="generateQR">GENERATE QR</button>
         </div>
+    <footer class="footer">
+        <p class="small mb-0 text-dark">
+            ©
+            <script>document.write(new Date().getFullYear())</script> Created By <a href="https://github.com/dozom" target="_blank"><span title="Dozom">Dozom</span></a>
+        </p>
+    </footer>
+
+
+
     </body>
 </html>
