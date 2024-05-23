@@ -7,4 +7,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('/generateQR',[QRController::class, 'generateQR']);
+Route::post('/generateQR', [QRController::class, 'generateQR']);
+Route::get('/viewQr/{qr}', [QRController::class, 'viewQR']);
