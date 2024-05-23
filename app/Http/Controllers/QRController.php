@@ -9,7 +9,9 @@ class QRController extends Controller
 {
     public function viewQR($qr)
     {
-        return view('viewqrcode', ['qr' => $qr]);
+        $qrEntry = new Qrcode();
+        $value = $qrEntry::where('code', '=', $qr)->get('input')[0];
+        return view('viewqrcode', ['qr' => $value['input']]);
     }
     private function generateRandomString($length = 10)
     {
